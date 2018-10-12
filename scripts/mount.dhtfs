@@ -48,6 +48,8 @@ def main():
 		print >> sys.stderr, "%s: Error: Required modules or libraries not setup properly" % sys.argv[0]
 		sys.exit(1)
 
+        fuse.fuse_python_api = (0, 2)
+
 	usage = """
 Generates Dynamic Hierarchy for Files from tags associated with files. Generated for files in directory specified as root
 

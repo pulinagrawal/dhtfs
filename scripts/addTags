@@ -120,7 +120,7 @@ def main():
 
 	mountpoint = getMountpoint(commonprefix)
 
-	if allMountpoints.get(mountpoint, '') != 'fuse':
+	if allMountpoints.get(mountpoint, '') != 'fuse.mount.dhtfs':
 		parser.error("Common mountpoint for the specified files is: '%s' This is not a FUSE filesystem" % mountpoint)
 
 	try:
